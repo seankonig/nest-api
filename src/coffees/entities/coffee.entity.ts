@@ -5,7 +5,7 @@ import {
 	ManyToMany,
 	PrimaryGeneratedColumn
 } from 'typeorm'
-import { Flavor } from './flavor.entiry'
+import { Flavor } from './flavor.entity'
 
 @Entity()
 export class Coffee {
@@ -13,7 +13,7 @@ export class Coffee {
 	id: number
 
 	@Column()
-	name: string
+	title: string
 
 	@Column()
 	brand: string

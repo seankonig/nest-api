@@ -10,6 +10,9 @@ export class Flavor {
 	@Column()
 	name: string
 
+	@Column({ nullable: true })
+	description: string
+
 	@ManyToMany(() => Coffee, (coffee) => coffee.flavors)
 	coffees: Coffee[]
 }
